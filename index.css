@@ -103,18 +103,16 @@ nav li a {
   color: #001e3c; /* Default link color: dark dark blue */
   font-size: 1rem;
   font-weight: bold;
-  padding: 8px 12px;
   text-decoration: none; /* Remove underline */
-  border-radius: 4px; /* Add slight rounding for aesthetics */
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
 }
 
 nav li a:hover {
-  background-color: #2563eb; /* Slight hover effect */
-  color: white; /* Invert color on hover */
+  color: #2563eb; /* Brighter blue for hover state */
+  text-shadow: 0 0 6px #2563eb; /* Glow effect for hover */
 }
 
 nav li a.active {
-  background-color: #3b82f6; /* Highlighted color for the active page */
-  color: white; /* Text color for the active link */
+  color: #3b82f6; /* Bright blue for the active page */
+  text-shadow: 0 0 8px #3b82f6; /* Stronger glow effect for active link */
 }
