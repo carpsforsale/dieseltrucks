@@ -222,3 +222,50 @@
             </div>
         </div>
     </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const slider = document.querySelector(".slider");
+        const slides = document.querySelectorAll(".slide");
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+
+        // Add navigation buttons
+        const prevButton = document.createElement("button");
+        const nextButton = document.createElement("button");
+        prevButton.textContent = "‹";
+        nextButton.textContent = "›";
+        prevButton.classList.add("prev");
+        nextButton.classList.add("next");
+
+        const navigationContainer = document.createElement("div");
+        navigationContainer.classList.add("slider-navigation");
+        navigationContainer.appendChild(prevButton);
+        navigationContainer.appendChild(nextButton);
+        document.querySelector(".photo-slider").appendChild(navigationContainer);
+
+        // Function to go to a specific slide
+        const goToSlide = (index) => {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            currentIndex = index;
+        };
+
+        // Event listeners for buttons
+        prevButton.addEventListener("click", () => {
+            const newIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            goToSlide(newIndex);
+        });
+
+        nextButton.addEventListener("click", () => {
+            const newIndex = (currentIndex + 1) % totalSlides;
+            goToSlide(newIndex);
+        });
+
+        // Auto-slide functionality
+        setInterval(() => {
+            const newIndex = (currentIndex + 1) % totalSlides;
+            goToSlide(newIndex);
+        }, 5000); // Change slide every 5 seconds
+    });
+</script>
+</body>
+</html>
