@@ -114,7 +114,7 @@ nav li a.active {
   color: #0042ad; /* Bright blue for the active page */
 }
 
-/* photo slider */
+/* Photo Slider */
 .photo-slider {
   width: 100%;
   overflow: hidden; /* Hides slides outside the visible area */
@@ -140,19 +140,19 @@ nav li a.active {
 .slide-content {
   text-align: center;
   color: white;
-  background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent overlay for text visibility */
   padding: 20px;
-  border-radius: 8px;
 }
 
 .slide-content h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add drop shadow to the header */
 }
 
 .slide-content p {
   font-size: 1rem;
   margin-bottom: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Add drop shadow to the paragraph text */
 }
 
 .slide-content .cta-button {
@@ -163,13 +163,15 @@ nav li a.active {
   border-radius: 4px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add drop shadow to the button */
 }
 
 .slide-content .cta-button:hover {
   background-color: #3b82f6;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Stronger drop shadow on hover */
 }
 
-/* Navigation Buttons */
+/* Navigation Buttons (Carets) */
 .slider-navigation {
   position: absolute;
   top: 50%;
@@ -180,17 +182,23 @@ nav li a.active {
 }
 
 .slider-navigation button {
-  background: rgba(0, 0, 0, 0.5);
+  background: transparent;
   color: white;
   border: none;
-  font-size: 1.5rem;
+  font-size: 3rem; /* Adjust size of the caret */
   cursor: pointer;
   padding: 10px;
-  border-radius: 50%;
-  transition: background 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .slider-navigation button:hover {
-  background: rgba(0, 0, 0, 0.8);
+  color: #2563eb; /* Change color on hover */
 }
 
+.slider-navigation .prev {
+  left: 10px; /* Position the left caret */
+}
+
+.slider-navigation .next {
+  right: 10px; /* Position the right caret */
+}
