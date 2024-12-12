@@ -130,3 +130,55 @@ footer {
   color: #fff;
   padding: 20px 10px;
 }
+
+/*announcement bar section fucker */
+
+.announcement-bar-wrapper {
+  background: linear-gradient(to right, #1e3a8a, #2563eb, #3b82f6); /* Full gradient background */
+  width: 100%; /* Ensure the gradient spans the full width */
+  padding: 10px 180px; /* Set 10px padding on the top and bottom, 180px padding on left and right */
+}
+
+.announcement-bar {
+  height: 40px; /* Set the height of the announcement bar */
+  display: flex; /* Ensures the columns are in a row */
+  justify-content: space-between; /* Distribute the columns evenly */
+  align-items: center; /* Vertically center the content */
+  color: white;
+}
+
+.column {
+  width: 320px; /* Set each column width to 320px */
+  margin-right: 28px; /* Set right margin between columns */
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column; /* Stack content vertically in the left column */
+  text-align: left; /* Align text to the left */
+}
+
+.hours {
+  font-weight: bold; /* Make the "Hours" text bold */
+}
+
+.service {
+  margin-top: 0; /* Remove any extra margin from the service text */
+}
+
+.middle-column {
+  text-align: center; /* Center the phone number */
+}
+
+.right-column {
+  /* Optional: Add content here for the right column */
+}
+
+.announcement-bar a {
+  color: white; /* Set the link color to white */
+  text-decoration: none;
+}
+
+.announcement-bar a:hover {
+  text-decoration: underline;
+}
