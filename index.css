@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Helvetica Neue', 'Arial', sans-serif; /* Changed to a more professional font */
+  font-family: 'Poppins', 'Roboto', 'Arial', sans-serif; /* Changed to Poppins or Roboto for thicker text */
   line-height: 1.6;
   color: #333;
   background-color: #f4f4f4;
