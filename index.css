@@ -70,14 +70,13 @@ header {
   justify-content: space-between; /* Space between the columns */
   align-items: center; /* Vertically center the content */
   margin: 0 auto; /* Center the header horizontally with auto margins */
-  padding: 0 180px; /* Add 180px padding on the left and right */
 }
 
 .logo {
   width: 730px; /* Set the logo container width to 730px */
   height: 76px; /* Set the height to 76px */
   display: flex;
-  justify-content: center; /* Center the logo horizontally */
+  justify-content: left; /* Center the logo horizontally */
   align-items: center; /* Center the logo vertically */
 }
 
@@ -108,11 +107,9 @@ nav li a {
 }
 
 nav li a:hover {
-  color: #2563eb; /* Brighter blue for hover state */
-  text-shadow: 0 0 6px #2563eb; /* Glow effect for hover */
+  color: #007BFF; /* Brighter blue for hover state */
 }
 
 nav li a.active {
   color: #3b82f6; /* Bright blue for the active page */
-  text-shadow: 0 0 8px #3b82f6; /* Stronger glow effect for active link */
 }
