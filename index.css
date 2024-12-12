@@ -143,7 +143,7 @@ nav li a.active {
   padding: 20px;
   position: absolute; /* Position the content absolutely over the image */
   left: 150px; /* Adds a little space from the left */
-  top: 50px; /* Adds space from the top */
+  top: 100px; /* Adds space from the top */
   max-width: 60%; /* Limits the text width */
 }
 
