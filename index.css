@@ -11,20 +11,6 @@ body {
   background-color: #f4f4f4;
 }
 
-header {
-  position: sticky; /* Makes the header stick to the top */
-  top: 0;           /* Sticks to the top of the viewport */
-  z-index: 1000;    /* Ensures it stays above other elements */
-  background-color: #3498db; /* Main color */
-  color: #fff;      /* White text for contrast */
-  padding: 20px 40px; /* Larger padding for a bigger appearance */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
-  font-size: 1.2rem; /* Larger font size for professionalism */
-}
-
 /*announcement bar section */
 .announcement-bar-wrapper {
   background: linear-gradient(to right, #1e3a8a, #2563eb, #3b82f6); /* Full gradient background */
@@ -74,4 +60,41 @@ header {
 
 .announcement-bar a:hover {
   text-decoration: underline;
+}
+
+/* header */
+header {
+  width: 1080px; /* Set the header width to 1080px */
+  height: 76px; /* Set the header height to 76px */
+  display: flex; /* Use flexbox to create two columns */
+  justify-content: space-between; /* Space between the columns */
+  align-items: center; /* Vertically center the content */
+  margin: 0 auto; /* Center the header horizontally with auto margins */
+  padding: 0 180px; /* Add 180px padding on the left and right */
+}
+
+.logo {
+  width: 730px; /* Set the logo container width to 730px */
+  height: 76px; /* Set the height to 76px */
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center; /* Center the logo vertically */
+}
+
+.logo img {
+  height: 50px; /* Set the logo image height to 50px */
+}
+
+nav {
+  width: 350px; /* Set the navigation container width to 350px */
+  height: 76px; /* Set the height to 76px */
+  display: flex;
+  justify-content: center; /* Center the nav items horizontally */
+  align-items: center; /* Vertically center the nav items */
+}
+
+nav ul {
+  list-style: none; /* Remove list styling */
+  display: flex; /* Arrange the list items in a row */
+  gap: 20px; /* Add space between the list items */
 }
