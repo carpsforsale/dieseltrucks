@@ -62,7 +62,7 @@ body {
   text-decoration: underline;
 }
 
-/* header */
+/* Header */
 header {
   width: 1080px; /* Set the header width to 1080px */
   height: 76px; /* Set the header height to 76px */
@@ -70,14 +70,15 @@ header {
   justify-content: space-between; /* Space between the columns */
   align-items: center; /* Vertically center the content */
   margin: 0 auto; /* Center the header horizontally with auto margins */
+  padding: 0 180px; /* Add 180px padding on the left and right */
 }
 
 .logo {
   width: 730px; /* Set the logo container width to 730px */
   height: 76px; /* Set the height to 76px */
   display: flex;
-  justify-content: center;
-  align-items: left; /* Center the logo vertically */
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center; /* Center the logo vertically */
 }
 
 .logo img {
@@ -96,4 +97,24 @@ nav ul {
   list-style: none; /* Remove list styling */
   display: flex; /* Arrange the list items in a row */
   gap: 20px; /* Add space between the list items */
+}
+
+nav li a {
+  color: #001e3c; /* Default link color: dark dark blue */
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 12px;
+  text-decoration: none; /* Remove underline */
+  border-radius: 4px; /* Add slight rounding for aesthetics */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav li a:hover {
+  background-color: #2563eb; /* Slight hover effect */
+  color: white; /* Invert color on hover */
+}
+
+nav li a.active {
+  background-color: #3b82f6; /* Highlighted color for the active page */
+  color: white; /* Text color for the active link */
 }
