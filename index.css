@@ -183,7 +183,7 @@ nav li a.active {
 
 .slider-navigation button {
   background: transparent;
-  color: white;
+  color: #0042ad;
   border: none;
   font-size: 3rem; /* Adjust size of the caret */
   cursor: pointer;
