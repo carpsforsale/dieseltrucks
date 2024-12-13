@@ -297,7 +297,8 @@ nav li a.active {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
+    align-items: flex-start; /* Aligns content to the left */
+    padding: 20px; /* Adds padding for text alignment */
     font-family: Arial, sans-serif;
     color: white;
     overflow: hidden; /* Ensure overlay stays within the box */
@@ -319,7 +320,7 @@ nav li a.active {
 .contact-info h2, .contact-info p {
     position: relative; /* So text stays above the overlay */
     z-index: 2;
-    text-align: center; /* Ensures the text is centered */
+    text-align: left; /* Ensures the text is left-aligned */
 }
 
 /* Heading */
@@ -341,7 +342,7 @@ nav li a.active {
 /* Icons */
 .icon {
     font-size: 1.5rem;
-    margin-right: 10px;
+    margin-right: 10px; /* Space between icon and text */
     flex-shrink: 0;
-    color: #007bff;
+    color: #007bff; /* Consistent icon color */
 }
