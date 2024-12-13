@@ -285,44 +285,63 @@ nav li a.active {
     margin: 0;
 }
 
-/* contact stuff */
-
 /* Contact Info Box */
 .contact-info {
     width: 380px;
     height: 300px;
-    background: url('truck6.PNG') no-repeat center center;
-    background-size: cover; /* Ensures the image covers the entire box */
-    padding: 20px;
+    position: relative; /* For the overlay layer */
+    background: url('truck6.png') no-repeat center center;
+    background-size: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
     font-family: Arial, sans-serif;
-    color: white; /* Text color to contrast with the image */
-    backdrop-filter: blur(5px); /* Optional: Blur effect to make text more legible */
+    color: white;
+    overflow: hidden; /* Ensure overlay stays within the box */
+}
+
+/* Overlay */
+.contact-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 255, 0.4); /* Semi-transparent blue */
+    z-index: 1; /* Ensure the overlay is below the text */
+}
+
+/* Text Content */
+.contact-info h2, .contact-info p {
+    position: relative; /* So text stays above the overlay */
+    z-index: 2;
+    text-align: center; /* Ensures the text is centered */
 }
 
 /* Heading */
 .contact-info h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: white; /* Ensure readability over the background image */
-    text-align: center;
+    color: white;
 }
 
 /* Contact Items */
 .contact-info p {
     display: flex;
-    align-items: center; /* Align icon and text */
+    align-items: center;
     margin: 10px 0;
     font-size: 1rem;
-    color: white; /* Matches the color of the heading */
+    color: white;
 }
 
 /* Icons */
 .icon {
     font-size: 1.5rem;
-    margin-right: 10px; /* Space between icon and text */
+    margin-right: 10px;
     flex-shrink: 0;
-    color: #007b; /* Highlighted color for icons */
+    color: #007bff;
 }
