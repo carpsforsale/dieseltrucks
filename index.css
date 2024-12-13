@@ -290,7 +290,7 @@ nav li a.active {
     width: 380px;
     height: 300px;
     position: relative; /* For the overlay layer */
-    background: url('truck6.png') no-repeat center center;
+    background: url('truck6.PNG') no-repeat center center;
     background-size: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
