@@ -363,23 +363,28 @@ nav li a.active {
     display: flex; /* Flexbox layout to split into two columns */
     justify-content: space-between; /* Space between the two columns */
     align-items: center; /* Vertically center content */
-    padding: 40px 20px;
-    background: url('truck6.PNG') no-repeat center center; /* Background image */
-    background-size: cover;
-    color: #fff; /* Text color for contrast */
-    font-family: Arial, sans-serif;
+    width: 1460px; /* Total width of the section */
+    height: 578px; /* Height of the section */
+    padding: 0; /* Remove padding to ensure exact size */
+    background-color: #f0f0f0; /* Background color, can be overridden with the image */
 }
 
 .content-left {
     flex: 1; /* Makes this section take up available space */
+    width: 730px; /* Set width of the text section */
+    height: 578px; /* Set height of the text section */
     padding-right: 20px; /* Space between text and the image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center text */
 }
 
 .content-right {
     flex: 1; /* Makes this section take up available space */
-    background: url('truck6.PNG') no-repeat center center;
+    width: 730px; /* Set width of the image section */
+    height: 578px; /* Set height of the image section */
+    background: url('truck6.PNG') no-repeat center center; /* Background image */
     background-size: cover;
-    height: 300px; /* Optional: Set the height of the image section */
 }
 
 /* Headings and Paragraphs */
