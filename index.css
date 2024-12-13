@@ -246,9 +246,11 @@ nav li a.active {
 
 .reasons-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto);  /* 2 rows */
+    gap: 20px; /* Space between grid items */
 }
+
 
 .reason-item {
     display: flex;
