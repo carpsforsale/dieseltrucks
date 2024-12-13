@@ -303,6 +303,7 @@ nav li a.active {
     font-family: Arial, sans-serif;
     color: white;
     overflow: hidden; /* Ensure overlay stays within the box */
+    margin: 0 20px; /* Adds margin to avoid touching the sides of the screen */
 }
 
 /* Overlay */
@@ -353,4 +354,6 @@ nav li a.active {
     display: flex;
     justify-content: space-between; /* Ensures space between the two sections */
     gap: 30px; /* Optional: space between the sections */
+    align-items: center; /* Vertically centers the sections within the container */
+    height: 100vh; /* Ensure the container takes full screen height */
 }
