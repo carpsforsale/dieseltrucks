@@ -236,6 +236,7 @@ nav li a.active {
     text-align: left;
     padding: 40px 20px;
     background-color: #f9f9f9;
+    flex: 1; /* Ensure it takes up remaining space in the flex container */
 }
 
 .why-choose-us h2 {
@@ -345,4 +346,11 @@ nav li a.active {
     margin-right: 10px; /* Space between icon and text */
     flex-shrink: 0;
     color: #007bff; /* Consistent icon color */
+}
+
+/* Flex container to place both sections side by side */
+.container {
+    display: flex;
+    justify-content: space-between; /* Ensures space between the two sections */
+    gap: 30px; /* Optional: space between the sections */
 }
