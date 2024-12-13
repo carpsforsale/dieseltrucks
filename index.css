@@ -360,13 +360,29 @@ nav li a.active {
 
 /* Our Specialties Section */
 .our-specialties {
+    display: flex; /* Flexbox layout to split into two columns */
+    justify-content: space-between; /* Space between the two columns */
+    align-items: center; /* Vertically center content */
+    padding: 40px 20px;
     background: url('truck6.PNG') no-repeat center center; /* Background image */
     background-size: cover;
-    padding: 40px 20px;
     color: #fff; /* Text color for contrast */
     font-family: Arial, sans-serif;
 }
 
+.content-left {
+    flex: 1; /* Makes this section take up available space */
+    padding-right: 20px; /* Space between text and the image */
+}
+
+.content-right {
+    flex: 1; /* Makes this section take up available space */
+    background: url('truck6.PNG') no-repeat center center;
+    background-size: cover;
+    height: 300px; /* Optional: Set the height of the image section */
+}
+
+/* Headings and Paragraphs */
 .our-specialties h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
