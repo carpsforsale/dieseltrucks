@@ -253,10 +253,28 @@
         navigationContainer.appendChild(nextButton);
         document.querySelector(".photo-slider").appendChild(navigationContainer);
 
+        // Create dots for navigation
+        const dotsContainer = document.createElement("div");
+        dotsContainer.classList.add("slider-dots");
+        slides.forEach((_, index) => {
+            const dot = document.createElement("span");
+            dot.classList.add("dot");
+            dot.dataset.slide = index;
+            dotsContainer.appendChild(dot);
+        });
+        document.querySelector(".photo-slider").appendChild(dotsContainer);
+
+        const dots = dotsContainer.querySelectorAll(".dot");
+
         // Function to go to a specific slide
         const goToSlide = (index) => {
             slider.style.transform = `translateX(-${index * 100}%)`;
             currentIndex = index;
+
+            // Update active dot
+            dots.forEach((dot, i) => {
+                dot.classList.toggle("active", i === index);
+            });
         };
 
         // Event listeners for buttons
@@ -270,11 +288,22 @@
             goToSlide(newIndex);
         });
 
+        // Event listeners for dots
+        dots.forEach((dot) => {
+            dot.addEventListener("click", () => {
+                const index = parseInt(dot.dataset.slide, 10);
+                goToSlide(index);
+            });
+        });
+
         // Auto-slide functionality
         setInterval(() => {
             const newIndex = (currentIndex + 1) % totalSlides;
             goToSlide(newIndex);
         }, 5000); // Change slide every 5 seconds
+
+        // Initialize slider
+        goToSlide(0);
     });
 </script>
 </body>
