@@ -240,29 +240,46 @@
         let currentIndex = 0;
 
         // Add navigation buttons
-        const prevButton = document.createElement("button");
-        const nextButton = document.createElement("button");
-        prevButton.textContent = "‹";
-        nextButton.textContent = "›";
-        prevButton.classList.add("prev");
-        nextButton.classList.add("next");
+        let navigationContainer = document.querySelector(".slider-navigation");
+        if (!navigationContainer) {
+            const prevButton = document.createElement("button");
+            const nextButton = document.createElement("button");
+            prevButton.textContent = "‹";
+            nextButton.textContent = "›";
+            prevButton.classList.add("prev");
+            nextButton.classList.add("next");
 
-        const navigationContainer = document.createElement("div");
-        navigationContainer.classList.add("slider-navigation");
-        navigationContainer.appendChild(prevButton);
-        navigationContainer.appendChild(nextButton);
-        document.querySelector(".photo-slider").appendChild(navigationContainer);
+            navigationContainer = document.createElement("div");
+            navigationContainer.classList.add("slider-navigation");
+            navigationContainer.appendChild(prevButton);
+            navigationContainer.appendChild(nextButton);
+            document.querySelector(".photo-slider").appendChild(navigationContainer);
 
-        // Create dots for navigation
-        const dotsContainer = document.createElement("div");
-        dotsContainer.classList.add("slider-dots");
-        slides.forEach((_, index) => {
-            const dot = document.createElement("span");
-            dot.classList.add("dot");
-            dot.dataset.slide = index;
-            dotsContainer.appendChild(dot);
-        });
-        document.querySelector(".photo-slider").appendChild(dotsContainer);
+            // Event listeners for buttons
+            prevButton.addEventListener("click", () => {
+                const newIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                goToSlide(newIndex);
+            });
+
+            nextButton.addEventListener("click", () => {
+                const newIndex = (currentIndex + 1) % totalSlides;
+                goToSlide(newIndex);
+            });
+        }
+
+        // Create dots for navigation if not already present
+        let dotsContainer = document.querySelector(".slider-dots");
+        if (!dotsContainer) {
+            dotsContainer = document.createElement("div");
+            dotsContainer.classList.add("slider-dots");
+            slides.forEach((_, index) => {
+                const dot = document.createElement("span");
+                dot.classList.add("dot");
+                dot.dataset.slide = index;
+                dotsContainer.appendChild(dot);
+            });
+            document.querySelector(".photo-slider").appendChild(dotsContainer);
+        }
 
         const dots = dotsContainer.querySelectorAll(".dot");
 
@@ -276,17 +293,6 @@
                 dot.classList.toggle("active", i === index);
             });
         };
-
-        // Event listeners for buttons
-        prevButton.addEventListener("click", () => {
-            const newIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            goToSlide(newIndex);
-        });
-
-        nextButton.addEventListener("click", () => {
-            const newIndex = (currentIndex + 1) % totalSlides;
-            goToSlide(newIndex);
-        });
 
         // Event listeners for dots
         dots.forEach((dot) => {
