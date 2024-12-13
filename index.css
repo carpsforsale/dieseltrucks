@@ -383,7 +383,7 @@ nav li a.active {
     flex: 1; /* Makes this section take up available space */
     width: 730px; /* Set width of the image section */
     height: 578px; /* Set height of the image section */
-    background: url('truck6.PNG') no-repeat center center; /* Background image */
+    background: url('truck7.PNG') no-repeat center center; /* Background image */
     background-size: cover;
 }
 
