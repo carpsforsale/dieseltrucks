@@ -291,19 +291,22 @@ nav li a.active {
 .contact-info {
     width: 380px;
     height: 300px;
-    background-color: #f9f9f9;
+    background: url('truck6.png') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire box */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     font-family: Arial, sans-serif;
+    color: white; /* Text color to contrast with the image */
+    backdrop-filter: blur(5px); /* Optional: Blur effect to make text more legible */
 }
 
 /* Heading */
 .contact-info h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #333;
+    color: white; /* Ensure readability over the background image */
     text-align: center;
 }
 
@@ -313,26 +316,13 @@ nav li a.active {
     align-items: center; /* Align icon and text */
     margin: 10px 0;
     font-size: 1rem;
-    color: #555;
+    color: white; /* Matches the color of the heading */
 }
 
 /* Icons */
 .icon {
-    font-size: 1.5rem; /* Adjust icon size */
+    font-size: 1.5rem;
     margin-right: 10px; /* Space between icon and text */
     flex-shrink: 0;
-    color: #2563eb;
-}
-
-/* Specific Icons */
-.phone-icon::before {
-    content: "\260E"; /* Unicode for a phone */
-}
-
-.email-icon::before {
-    content: "\2709"; /* Unicode for an envelope */
-}
-
-.address-icon::before {
-    content: "\1F4CD"; /* Unicode for a pin */
+    color: #ffe600; /* Highlighted color for icons */
 }
