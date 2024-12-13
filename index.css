@@ -230,7 +230,7 @@ nav li a.active {
   right: 10px; /* Position the right caret */
 }
 
-/* why choose us section */
+/* Why Choose Us Section */
 
 .why-choose-us {
     text-align: center;
@@ -248,9 +248,8 @@ nav li a.active {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-template-rows: repeat(2, auto);  /* 2 rows */
-    gap: 20px; /* Space between grid items */
+    gap: 20px; /* Space between items */
 }
-
 
 .reason-item {
     display: flex;
