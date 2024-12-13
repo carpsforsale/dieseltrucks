@@ -324,5 +324,5 @@ nav li a.active {
     font-size: 1.5rem;
     margin-right: 10px; /* Space between icon and text */
     flex-shrink: 0;
-    color: #ffe600; /* Highlighted color for icons */
+    color: #007b; /* Highlighted color for icons */
 }
