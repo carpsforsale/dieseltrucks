@@ -357,3 +357,43 @@ nav li a.active {
     align-items: center; /* Vertically centers the sections within the container */
     height: 100vh; /* Ensure the container takes full screen height */
 }
+
+/* Our Specialties Section */
+.our-specialties {
+    background: url('truck6.PNG') no-repeat center center; /* Background image */
+    background-size: cover;
+    padding: 40px 20px;
+    color: #fff; /* Text color for contrast */
+    font-family: Arial, sans-serif;
+}
+
+.our-specialties h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.our-specialties p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.our-specialties ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0; /* Remove default padding */
+}
+
+.our-specialties li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: flex; /* Ensures the icon and text are aligned horizontally */
+    align-items: center; /* Vertically centers the icon and text */
+}
+
+.special-icon {
+    width: 24px; /* Size of the icon */
+    height: 24px; /* Size of the icon */
+    margin-right: 15px; /* Space between icon and text */
+    background: url('your-icon-path.png') no-repeat center center; /* Set your desired icon image */
+    background-size: contain; /* Ensures the icon is resized proportionally */
+}
