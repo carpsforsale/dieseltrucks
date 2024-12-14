@@ -241,7 +241,7 @@ nav li a.active {
     text-align: left;
 }
 
-.why-choose-us-wrapper {
+.why-choose-us-wrapper, .section-title {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
