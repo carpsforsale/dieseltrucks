@@ -231,12 +231,10 @@ nav li a.active {
 }
 
 /* Why Choose Us Section */
-
-.why-choose-us {
-    text-align: left;
-    padding: 40px 20px;
+.why-choose-us-container {
     background-color: #f9f9f9;
-    flex: 1; /* Ensure it takes up remaining space in the flex container */
+    padding: 50px 20px;
+    margin-bottom: 50px;
 }
 
 .why-choose-us h2 {
@@ -248,9 +246,8 @@ nav li a.active {
 
 .reasons-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(2, auto);  /* 2 rows */
-    gap: 20px; /* Space between items */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .reason-item {
@@ -339,6 +336,9 @@ nav li a.active {
     margin: 10px 0;
     font-size: 1rem;
     color: white;
+    text-overflow: ellipsis;
+    overflow: hidden; /* Avoids text overflow */
+    white-space: nowrap; /* Prevents line breaks */
 }
 
 /* Icons */
@@ -349,27 +349,33 @@ nav li a.active {
     color: #007bff; /* Consistent icon color */
 }
 
-/* Flex container to place both sections side by side */
-.container {
-    display: flex;
-    justify-content: space-between; /* Ensures space between the two sections */
-    gap: 30px; /* Optional: space between the sections */
-    align-items: center; /* Vertically centers the sections within the container */
-    height: 100vh; /* Ensure the container takes full screen height */
+/* Contact Info Section */
+.contact-info-container {
+    background-color: #002147;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 8px;
 }
 
 /* Our Specialties Section */
-.our-specialties {
-    display: flex; /* Flexbox layout to split into two columns */
-    justify-content: space-between; /* Space between the two columns */
-    align-items: center; /* Vertically center content */
-    width: 1460px; /* Total width of the section */
-    height: 578px; /* Height of the section */
-    padding: 0; /* Remove padding to ensure exact size */
-    background-color: #f0f0f0; /* Background color, can be overridden with the image */
+.our-specialties-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 50px;
 }
 
-.content-left {
+.specialties-content {
+    display: flex;
+    width: 100%;
+    max-width: 1460px;
+    justify-content: space-between;
+}
+
+.content-right {
     flex: 1; /* Makes this section take up available space */
     width: 730px; /* Set width of the text section */
     height: 578px; /* Set height of the text section */
@@ -379,7 +385,7 @@ nav li a.active {
     justify-content: center; /* Vertically center text */
 }
 
-.content-right {
+.content-left {
     flex: 1; /* Makes this section take up available space */
     width: 730px; /* Set width of the image section */
     height: 578px; /* Set height of the image section */
