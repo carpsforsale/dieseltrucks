@@ -231,11 +231,16 @@ nav li a.active {
 }
 
 /* Wrapper for both sections */
+/* Wrapper for both sections */
 .why-choose-us-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px; /* Space between the two columns */
+    max-width: 1200px; /* Limit width to standard page width */
+    margin: 0 auto; /* Center the section */
+    padding: 0 15px; /* Add horizontal padding for small screens */
+    width: 100%;
 }
 
 /* Why Choose Us Grid */
@@ -301,6 +306,7 @@ nav li a.active {
     flex-shrink: 0;
     color: #007bff;
 }
+
 
 /* Icons */
 .icon {
