@@ -1,435 +1,597 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', 'Roboto', 'Arial', sans-serif; /* Changed to Poppins or Roboto for thicker text */
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
+	font-family: 'Poppins', 'Roboto', 'Arial', sans-serif;
+	/* Changed to Poppins or Roboto for thicker text */
+	line-height: 1.6;
+	color: #333;
+	background-color: #f4f4f4;
 }
 
 /*announcement bar section */
+/*announcement bar section */
+/*announcement bar section */
+
 .announcement-bar-wrapper {
-  background: linear-gradient(to right, #1e3a8a, #2563eb, #3b82f6); /* Full gradient background */
-  width: 100%; /* Ensure the gradient spans the full width */
-  padding: 10px 180px; /* Set 10px padding on the top and bottom, 180px padding on left and right */
+	background: linear-gradient(to right, #1e3a8a, #2563eb, #3b82f6);
+	/* Full gradient background */
+	width: 100%;
+	/* Ensure the gradient spans the full width */
+	padding: 10px 180px;
+	/* Set 10px padding on the top and bottom, 180px padding on left and right */
 }
 
 .announcement-bar {
-  height: 40px; /* Set the height of the announcement bar */
-  display: flex; /* Ensures the columns are in a row */
-  justify-content: space-between; /* Distribute the columns evenly */
-  align-items: center; /* Vertically center the content */
-  color: white;
+	height: 40px;
+	/* Set the height of the announcement bar */
+	display: flex;
+	/* Ensures the columns are in a row */
+	justify-content: space-between;
+	/* Distribute the columns evenly */
+	align-items: center;
+	/* Vertically center the content */
+	color: white;
 }
 
 .column {
-  width: 320px; /* Set each column width to 320px */
-  margin-right: 28px; /* Set right margin between columns */
+	width: 320px;
+	/* Set each column width to 320px */
+	margin-right: 28px;
+	/* Set right margin between columns */
 }
 
 .left-column {
-  display: flex;
-  flex-direction: column; /* Stack content vertically in the left column */
-  text-align: left; /* Align text to the left */
+	display: flex;
+	flex-direction: column;
+	/* Stack content vertically in the left column */
+	text-align: left;
+	/* Align text to the left */
 }
 
 .hours {
-  font-weight: bold; /* Make the "Hours" text bold */
+	font-weight: bold;
+	/* Make the "Hours" text bold */
 }
 
 .service {
-  margin-top: 0; /* Remove any extra margin from the service text */
+	margin-top: 0;
+	/* Remove any extra margin from the service text */
 }
 
 .middle-column {
-  text-align: center; /* Center the phone number */
+	text-align: center;
+	/* Center the phone number */
 }
 
 .right-column {
-  /* Optional: Add content here for the right column */
+	/* Optional: Add content here for the right column */
 }
 
 .announcement-bar a {
-  color: white; /* Set the link color to white */
-  text-decoration: none;
+	color: white;
+	/* Set the link color to white */
+	text-decoration: none;
 }
 
 .announcement-bar a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
-/* Header */
+/* Header Section */
+/* Header Section */
+/* Header SECTION */
+
 header {
-  width: 1080px; /* Set the header width to 1080px */
-  height: 76px; /* Set the header height to 76px */
-  display: flex; /* Use flexbox to create two columns */
-  justify-content: space-between; /* Space between the columns */
-  align-items: center; /* Vertically center the content */
-  margin: 0 auto; /* Center the header horizontally with auto margins */
+	width: 1080px;
+	/* Set the header width to 1080px */
+	height: 76px;
+	/* Set the header height to 76px */
+	display: flex;
+	/* Use flexbox to create two columns */
+	justify-content: space-between;
+	/* Space between the columns */
+	align-items: center;
+	/* Vertically center the content */
+	margin: 0 auto;
+	/* Center the header horizontally with auto margins */
 }
 
 .logo {
-  width: 730px; /* Set the logo container width to 730px */
-  height: 76px; /* Set the height to 76px */
-  display: flex;
-  justify-content: left; /* Center the logo horizontally */
-  align-items: center; /* Center the logo vertically */
+	width: 730px;
+	/* Set the logo container width to 730px */
+	height: 76px;
+	/* Set the height to 76px */
+	display: flex;
+	justify-content: left;
+	/* Center the logo horizontally */
+	align-items: center;
+	/* Center the logo vertically */
 }
 
 .logo img {
-  height: 50px; /* Set the logo image height to 50px */
+	height: 50px;
+	/* Set the logo image height to 50px */
 }
 
 nav {
-  width: 350px; /* Set the navigation container width to 350px */
-  height: 76px; /* Set the height to 76px */
-  display: flex;
-  justify-content: center; /* Center the nav items horizontally */
-  align-items: center; /* Vertically center the nav items */
+	width: 350px;
+	/* Set the navigation container width to 350px */
+	height: 76px;
+	/* Set the height to 76px */
+	display: flex;
+	justify-content: center;
+	/* Center the nav items horizontally */
+	align-items: center;
+	/* Vertically center the nav items */
 }
 
 nav ul {
-  list-style: none; /* Remove list styling */
-  display: flex; /* Arrange the list items in a row */
-  gap: 20px; /* Add space between the list items */
+	list-style: none;
+	/* Remove list styling */
+	display: flex;
+	/* Arrange the list items in a row */
+	gap: 20px;
+	/* Add space between the list items */
 }
 
 nav li a {
-  color: #001e3c; /* Default link color: dark dark blue */
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+	color: #001e3c;
+	/* Default link color: dark dark blue */
+	font-size: 1rem;
+	font-weight: bold;
+	text-decoration: none;
+	/* Remove underline */
+	transition: color 0.3s ease, text-shadow 0.3s ease;
+	/* Smooth transition */
 }
 
 nav li a:hover {
-  color: #007BFF; /* Brighter blue for hover state */
+	color: #007BFF;
+	/* Brighter blue for hover state */
 }
 
 nav li a.active {
-  color: #0042ad; /* Bright blue for the active page */
+	color: #0042ad;
+	/* Bright blue for the active page */
 }
+
+/* Slider SECTION BRO */
+/* Slider SECTION BRO */
+/* Slider SECTION BRO */
 
 /* Photo Slider */
 .photo-slider {
-  width: 100%;
-  overflow: hidden; /* Hides slides outside the visible area */
-  position: relative;
+	width: 100%;
+	overflow: hidden;
+	/* Hides slides outside the visible area */
+	position: relative;
 }
 
 .slider {
-  display: flex; /* Makes slides appear in a row */
-  transition: transform 0.5s ease-in-out; /* Smooth slide transition */
+	display: flex;
+	/* Makes slides appear in a row */
+	transition: transform 0.5s ease-in-out;
+	/* Smooth slide transition */
 }
 
 .slide {
-  min-width: 100%; /* Each slide takes up the full width of the container */
-  height: 400px; /* Adjust height as needed */
-  background-size: cover; /* Ensures the background image covers the slide */
-  background-position: center; /* Centers the background image */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+	min-width: 100%;
+	/* Each slide takes up the full width of the container */
+	height: 400px;
+	/* Adjust height as needed */
+	background-size: cover;
+	/* Ensures the background image covers the slide */
+	background-position: center;
+	/* Centers the background image */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }
 
 .slide-content {
-  text-align: left; /* Left-align the text */
-  color: white;
-  padding: 20px;
-  position: absolute; /* Position the content absolutely over the image */
-  left: 150px; /* Adds a little space from the left */
-  top: 100px; /* Adds space from the top */
-  max-width: 60%; /* Limits the text width */
+	text-align: left;
+	/* Left-align the text */
+	color: white;
+	padding: 20px;
+	position: absolute;
+	/* Position the content absolutely over the image */
+	left: 150px;
+	/* Adds a little space from the left */
+	top: 100px;
+	/* Adds space from the top */
+	max-width: 60%;
+	/* Limits the text width */
 }
 
 .slide-content h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  font-weight: bold; /* Bold the header */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add drop shadow to the header */
+	font-size: 2rem;
+	margin-bottom: 10px;
+	font-weight: bold;
+	/* Bold the header */
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	/* Add drop shadow to the header */
 }
 
 .slide-content p {
-  font-size: 1rem;
-  margin-bottom: 15px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Add drop shadow to the paragraph text */
+	font-size: 1rem;
+	margin-bottom: 15px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+	/* Add drop shadow to the paragraph text */
 }
 
 .slide-content .cta-button {
-  padding: 10px 20px;
-  color: white;
-  background-color: #2563eb;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add drop shadow to the button */
+	padding: 10px 20px;
+	color: white;
+	background-color: #2563eb;
+	text-decoration: none;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+	/* Add drop shadow to the button */
 }
 
 .slide-content .cta-button:hover {
-  background-color: #3b82f6;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Stronger drop shadow on hover */
+	background-color: #3b82f6;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+	/* Stronger drop shadow on hover */
 }
 
 /* Navigation Buttons (Carets) */
 .slider-navigation {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	transform: translateY(-50%);
 }
 
 .slider-navigation button {
-  background: transparent;
-  color: #0042ad;
-  border: none;
-  font-size: 3rem; /* Adjust size of the caret */
-  cursor: pointer;
-  padding: 10px;
-  transition: color 0.3s ease;
+	background: transparent;
+	color: #0042ad;
+	border: none;
+	font-size: 3rem;
+	/* Adjust size of the caret */
+	cursor: pointer;
+	padding: 10px;
+	transition: color 0.3s ease;
 }
 
 .slider-navigation button:hover {
-  color: #2563eb; /* Change color on hover */
+	color: #2563eb;
+	/* Change color on hover */
 }
 
 .slider-navigation .prev {
-  left: 10px; /* Position the left caret */
+	left: 10px;
+	/* Position the left caret */
 }
 
 /* Slider Dots */
 .slider-dots {
-    position: absolute;
-    bottom: 20px; /* Position above the bottom edge of the slider */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center-align dots */
-    z-index: 10; /* Ensure dots are above the slider content */
-    display: flex; /* Arrange dots in a row */
-    justify-content: center;
-    gap: 10px; /* Space between dots */
+	position: absolute;
+	bottom: 20px;
+	/* Position above the bottom edge of the slider */
+	left: 50%;
+	/* Center horizontally */
+	transform: translateX(-50%);
+	/* Center-align dots */
+	z-index: 10;
+	/* Ensure dots are above the slider content */
+	display: flex;
+	/* Arrange dots in a row */
+	justify-content: center;
+	gap: 10px;
+	/* Space between dots */
 }
 
 .slider-dots .dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent inactive dots */
-    border-radius: 50%; /* Circular shape */
-    cursor: pointer;
-    transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
-    opacity: 0.8; /* Slightly visible */
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	/* Semi-transparent inactive dots */
+	border-radius: 50%;
+	/* Circular shape */
+	cursor: pointer;
+	transition: background-color 0.3s ease, opacity 0.3s ease;
+	/* Smooth hover effect */
+	opacity: 0.8;
+	/* Slightly visible */
 }
 
 .slider-dots .dot.active {
-    background-color: rgba(255, 255, 255, 0.9); /* Brighter active dot */
-    opacity: 1; /* Fully visible */
+	background-color: rgba(255, 255, 255, 0.9);
+	/* Brighter active dot */
+	opacity: 1;
+	/* Fully visible */
 }
 
 .slider-navigation .next {
-    right: 10px; /* Position the right caret */
+	right: 10px;
+	/* Position the right caret */
 }
 
-/* Wrapper for both sections */
+/* Why Choose Us SECTION */
+/* Why Choose Us SECTION */
+/* Why Choose Us SECTION */
 
 /* Title Styling */
 .section-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #222; /* Or another color of your choice */
-    text-align: left;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #222;
+	/* Or another color of your choice */
+	text-align: left;
 }
 
 /* Why Choose Us Wrapper and Section Styling */
-.why-choose-us-wrapper, .section-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px; /* Space between the two columns */
-    max-width: 1200px; /* Limit width to standard page width */
-    margin: 40px auto; /* Add space above and center the section */
-    padding: 0 15px; /* Add horizontal padding for small screens */
-    width: 100%;
+.why-choose-us-wrapper,
+.section-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 30px;
+	/* Space between the two columns */
+	max-width: 1200px;
+	/* Limit width to standard page width */
+	margin: 40px auto;
+	/* Add space above and center the section */
+	padding: 0 15px;
+	/* Add horizontal padding for small screens */
+	width: 100%;
 }
 
 
 /* Why Choose Us Grid */
 .reasons-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-gap: 5px;
-    width: 65%; /* Adjust width of grid */
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	/* Two columns */
+	grid-gap: 5px;
+	width: 65%;
+	/* Adjust width of grid */
 }
 
 /* Individual Reason Items */
 .reason-item {
-    display: flex;
-    align-items: flex-start;
-    padding: 20px;
+	display: flex;
+	align-items: flex-start;
+	padding: 20px;
 }
 
 .icon {
-    font-size: 2rem;
-    color: #2563eb;
-    margin-right: 15px;
-    flex-shrink: 0;
+	font-size: 2rem;
+	color: #2563eb;
+	margin-right: 15px;
+	flex-shrink: 0;
 }
 
 .reason-content h3 {
-    font-size: 1.5rem;
-    color: #222;
-    margin-bottom: 10px;
+	font-size: 1.5rem;
+	color: #222;
+	margin-bottom: 10px;
 }
 
 .reason-content p {
-    font-size: 1rem;
-    color: #555;
-    margin: 0;
+	font-size: 1rem;
+	color: #555;
+	margin: 0;
 }
 
 /* Contact Info Section */
+/* Contact Info Section */
+/* Contact Info Section */
 .contact-info-container {
-    width: 288px; /* Set width to 288px */
-    height: 226px; /* Set height to 226px */
-    background: url('truck6.PNG') no-repeat center center; /* Background image */
-    background-size: cover; /* Ensures the background covers the container */
-    color: white;
-    padding: 40px 20px; /* 40px padding top and bottom, 20px padding left and right */
-    text-align: left;
-    border-radius: 8px;
-    box-sizing: border-box; /* Ensures padding does not affect the container's set width and height */
-    overflow-y: auto; /* Allows scroll if content overflows vertically */
-    position: relative; /* Required for positioning the overlay */
+	width: 288px;
+	/* Set width to 288px */
+	height: 226px;
+	/* Set height to 226px */
+	background: url('truck6.PNG') no-repeat center center;
+	/* Background image */
+	background-size: cover;
+	/* Ensures the background covers the container */
+	color: white;
+	text-align: left;
+	border-radius: 8px;
+	box-sizing: border-box;
+	/* Ensures padding does not affect the container's set width and height */
+	position: relative;
+	/* Required for positioning the overlay */
+	/* Flexbox centering */
+	display: flex;
+	flex-direction: column;
+	/* Stack items vertically */
+	justify-content: center;
+	/* Center content vertically */
+	padding: 0 20px;
+	/* Horizontal padding only */
 }
 
 /* Semi-transparent overlay */
 .contact-info-container::before {
-    content: ''; /* Necessary for pseudo-elements */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 123, 255, 0.7); /* Semi-transparent overlay with dark blue color */
-    border-radius: 8px; /* Matches the container's border radius */
-    z-index: 1; /* Ensures the overlay is below the content */
+	content: '';
+	/* Necessary for pseudo-elements */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 123, 255, 0.7);
+	/* Semi-transparent overlay with dark blue color */
+	border-radius: 8px;
+	/* Matches the container's border radius */
+	z-index: 1;
+	/* Ensures the overlay is below the content */
 }
 
 /* Ensure the text content appears above the overlay */
 .contact-info-container .content {
-    position: relative;
-    z-index: 2; /* Ensures content is above the overlay */
+	position: relative;
+	z-index: 2;
+	/* Ensures content is above the overlay */
+	text-align: left;
+	/* Keep text aligned to the left */
 }
 
 /* Adjusting content styling for better visibility */
-.contact-info-container h2, .contact-info-container p {
-    position: relative; /* Ensures text stays above overlay */
-    z-index: 3; /* Ensures text stays above overlay */
+.contact-info-container h2,
+.contact-info-container p {
+	position: relative;
+	/* Ensures text stays above overlay */
+	z-index: 3;
+	/* Ensures text stays above overlay */
+	margin: 0;
+	/* Reset default margins */
 }
 
-/* Header styling */
 .contact-info-container h2 {
-    font-size: 1.4rem; /* Reduced font size for header to fit better */
-    margin-bottom: 10px; /* Reduced margin to keep it inside the container */
+	font-size: 1.4rem;
+	/* Header font size */
+	margin-bottom: 0px;
+	/* Reduced margin for tight spacing with the divider */
+	position: relative;
+	/* Ensure it respects z-index */
+	z-index: 3;
+	/* Keeps it above the overlay */
 }
+
 
 /* Paragraph styling */
 .contact-info-container p {
-    display: flex;
-    align-items: center;
-    margin: 8px 0; /* Reduced margin for better fit */
-    font-size: 0.9rem; /* Slightly smaller font size */
+	display: flex;
+	align-items: center;
+	margin: 8px 0;
+	/* Reduced margin for better fit */
+	font-size: 0.9rem;
+	/* Slightly smaller font size */
 }
 
 /* Icons inside the content */
 .contact-info-container .icon {
-    font-size: 1.5rem;
-    margin-right: 10px;
-    flex-shrink: 0;
-    color: #007bff;
+	font-size: 1.5rem;
+	margin-right: 10px;
+	flex-shrink: 0;
+	color: #007bff;
 }
 
 /* Icons */
 .contact-info-container .fas {
-    font-size: 1.5rem;
-    margin-right: 20px; /* Space between icon and text */
-    flex-shrink: 0;
-    color: #007bff; /* Consistent icon color */
+	font-size: 1.5rem;
+	margin-right: 20px;
+	/* Space between icon and text */
+	flex-shrink: 0;
+	color: #007bff;
+	/* Consistent icon color */
+}
+
+.contact-info-container .divider {
+	width: 50px;
+	/* Divider length */
+	height: 2px;
+	/* Thickness */
+	background-color: white;
+	/* Color to match the text */
+	margin: 10px 0;
+	/* Reduced margin for closer spacing */
+	border-radius: 1px;
+	/* Optional: rounded edges */
+	position: relative;
+	/* Ensure it respects z-index */
+	z-index: 3;
+	/* Places it above the overlay */
 }
 
 
 /* Our Specialties Section */
 
 
-
 .our-specialties-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	margin-bottom: 50px;
 }
 
 .specialties-content {
-    display: flex;
-    width: 100%;
-    max-width: 1460px;
-    justify-content: space-between;
+	display: flex;
+	width: 100%;
+	max-width: 1460px;
+	justify-content: space-between;
 }
 
 .content-right {
-    flex: 1; /* Makes this section take up available space */
-    width: 730px; /* Set width of the text section */
-    height: 578px; /* Set height of the text section */
-    padding-right: 20px; /* Space between text and the image */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically center text */
+	flex: 1;
+	/* Makes this section take up available space */
+	width: 730px;
+	/* Set width of the text section */
+	height: 578px;
+	/* Set height of the text section */
+	padding-right: 20px;
+	/* Space between text and the image */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* Vertically center text */
 }
 
 .content-left {
-    flex: 1; /* Makes this section take up available space */
-    width: 730px; /* Set width of the image section */
-    height: 578px; /* Set height of the image section */
-    background: url('truck7.PNG') no-repeat center center; /* Background image */
-    background-size: cover;
+	flex: 1;
+	/* Makes this section take up available space */
+	width: 730px;
+	/* Set width of the image section */
+	height: 578px;
+	/* Set height of the image section */
+	background: url('truck7.PNG') no-repeat center center;
+	/* Background image */
+	background-size: cover;
 }
 
 /* Headings and Paragraphs */
 .our-specialties h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #fff;
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+	color: #fff;
 }
 
 .our-specialties p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+	font-size: 1.2rem;
+	margin-bottom: 20px;
 }
 
 .our-specialties ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding-left: 0; /* Remove default padding */
+	list-style-type: none;
+	/* Remove default bullet points */
+	padding-left: 0;
+	/* Remove default padding */
 }
 
 .our-specialties li {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    display: flex; /* Ensures the icon and text are aligned horizontally */
-    align-items: center; /* Vertically centers the icon and text */
+	font-size: 1.1rem;
+	margin-bottom: 15px;
+	display: flex;
+	/* Ensures the icon and text are aligned horizontally */
+	align-items: center;
+	/* Vertically centers the icon and text */
 }
 
 .special-icon {
-    width: 24px; /* Size of the icon */
-    height: 24px; /* Size of the icon */
-    margin-right: 15px; /* Space between icon and text */
-    background: url('your-icon-path.png') no-repeat center center; /* Set your desired icon image */
-    background-size: contain; /* Ensures the icon is resized proportionally */
+	width: 24px;
+	/* Size of the icon */
+	height: 24px;
+	/* Size of the icon */
+	margin-right: 15px;
+	/* Space between icon and text */
+	background: url('your-icon-path.png') no-repeat center center;
+	/* Set your desired icon image */
+	background-size: contain;
+	/* Ensures the icon is resized proportionally */
 }
