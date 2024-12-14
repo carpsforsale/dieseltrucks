@@ -256,7 +256,7 @@ nav li a.active {
 .reasons-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-gap: 20px;
+    grid-gap: 5px;
     width: 65%; /* Adjust width of grid */
 }
 
@@ -288,25 +288,27 @@ nav li a.active {
 
 /* Contact Info Section */
 .contact-info-container {
-    width: 30%; /* Adjust width of contact section */
+    width: 288px; /* Set width to 288px */
+    height: 226px; /* Set height to 226px */
     background-color: #002147;
     color: white;
-    padding: 20px;
+    padding: 40px 20px; /* 40px padding top and bottom, 20px padding left and right */
     text-align: left;
     border-radius: 8px;
+    box-sizing: border-box; /* Ensures padding does not affect the container's set width and height */
+    overflow-y: auto; /* Allows scroll if content overflows vertically */
 }
 
 .contact-info-container h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 1.4rem; /* Reduced font size for header to fit better */
+    margin-bottom: 10px; /* Reduced margin to keep it inside the container */
 }
 
 .contact-info-container p {
     display: flex;
     align-items: center;
-    margin: 10px 0;
-    font-size: 1rem;
-    color: white;
+    margin: 8px 0; /* Reduced margin for better fit */
+    font-size: 0.9rem; /* Slightly smaller font size */
 }
 
 .contact-info-container .icon {
@@ -318,12 +320,13 @@ nav li a.active {
 
 
 /* Icons */
-.icon {
+.contact-info-container .fas {
     font-size: 1.5rem;
-    margin-right: 10px; /* Space between icon and text */
+    margin-right: 20px; /* Space between icon and text */
     flex-shrink: 0;
     color: #007bff; /* Consistent icon color */
 }
+
 
 /* Our Specialties Section */
 
