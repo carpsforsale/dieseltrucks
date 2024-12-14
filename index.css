@@ -317,9 +317,9 @@ nav li a.active {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 33, 71, 0.5); /* Semi-transparent overlay with dark blue color */
+    background-color: rgba(0, 123, 255, 0.7); /* Semi-transparent overlay with dark blue color */
     border-radius: 8px; /* Matches the container's border radius */
-    z-index: 1; /* Ensures the overlay is above the background */
+    z-index: 1; /* Ensures the overlay is below the content */
 }
 
 /* Ensure the text content appears above the overlay */
@@ -328,12 +328,19 @@ nav li a.active {
     z-index: 2; /* Ensures content is above the overlay */
 }
 
+/* Adjusting content styling for better visibility */
+.contact-info-container h2, .contact-info-container p {
+    position: relative; /* Ensures text stays above overlay */
+    z-index: 3; /* Ensures text stays above overlay */
+}
 
+/* Header styling */
 .contact-info-container h2 {
     font-size: 1.4rem; /* Reduced font size for header to fit better */
     margin-bottom: 10px; /* Reduced margin to keep it inside the container */
 }
 
+/* Paragraph styling */
 .contact-info-container p {
     display: flex;
     align-items: center;
@@ -341,13 +348,13 @@ nav li a.active {
     font-size: 0.9rem; /* Slightly smaller font size */
 }
 
+/* Icons inside the content */
 .contact-info-container .icon {
     font-size: 1.5rem;
     margin-right: 10px;
     flex-shrink: 0;
     color: #007bff;
 }
-
 
 /* Icons */
 .contact-info-container .fas {
