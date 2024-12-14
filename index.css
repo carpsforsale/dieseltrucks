@@ -231,7 +231,16 @@ nav li a.active {
 }
 
 /* Wrapper for both sections */
-/* Wrapper for both sections */
+
+/* Title Styling */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222; /* Or another color of your choice */
+    text-align: left;
+}
+
 .why-choose-us-wrapper {
     display: flex;
     justify-content: space-between;
