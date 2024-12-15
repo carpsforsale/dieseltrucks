@@ -270,10 +270,16 @@
 <!-- Leaflet.js & OpenStreetMap Script -->
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script>
-    var map = L.map('map').setView([36.077028, -95.958473], 13); // Coordinates of your shop
+    var map = L.map('map', {
+        scrollWheelZoom: false, // Disable scroll wheel zoom
+        dragging: false, // Disable dragging the map
+        touchZoom: false, // Disable touch zooming
+    }).setView([36.077028, -95.958473], 13); // Coordinates of your shop
+
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
+
     L.marker([36.077028, -95.958473]).addTo(map)
         .bindPopup('Your Shop Location')
         .openPopup();
