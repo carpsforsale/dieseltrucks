@@ -511,87 +511,62 @@ nav li a.active {
 
 
 /* Our Specialties Section */
+/* Our Specialties Section */
+/* Our Specialties Section */
 
 
-.our-specialties-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 50px;
-	margin-bottom: 50px;
+/* Section container */
+.specialties-section-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between image and text */
+    padding: 20px;
 }
 
-.specialties-content {
-	display: flex;
-	width: 100%;
-	max-width: 1460px;
-	justify-content: space-between;
+/* Image wrapper */
+.specialties-image-wrapper {
+    flex: 1; /* Makes image take up 50% of the section */
+    max-width: 50%; /* Prevents image from exceeding half the width */
 }
 
-.content-right {
-	flex: 1;
-	/* Makes this section take up available space */
-	width: 730px;
-	/* Set width of the text section */
-	height: 578px;
-	/* Set height of the text section */
-	padding-right: 20px;
-	/* Space between text and the image */
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	/* Vertically center text */
+.specialties-image {
+    width: 100%;
+    height: auto; /* Keeps image proportional */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
 }
 
-.content-left {
-	flex: 1;
-	/* Makes this section take up available space */
-	width: 730px;
-	/* Set width of the image section */
-	height: 578px;
-	/* Set height of the image section */
-	background: url('truck7.PNG') no-repeat center center;
-	/* Background image */
-	background-size: cover;
+/* Text wrapper */
+.specialties-text-wrapper {
+    flex: 1; /* Makes text take up the other 50% of the section */
+    max-width: 50%;
+    color: #333; /* Neutral text color */
+    padding: 10px;
+    font-family: Arial, sans-serif;
 }
 
-/* Headings and Paragraphs */
-.our-specialties h2 {
-	font-size: 2.5rem;
-	margin-bottom: 20px;
-	color: #fff;
+/* Header */
+.specialties-header {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #007bff; /* Optional: matches your theme color */
 }
 
-.our-specialties p {
-	font-size: 1.2rem;
-	margin-bottom: 20px;
+/* Introductory paragraph */
+.specialties-intro {
+    margin-bottom: 10px;
+    font-size: 1rem;
 }
 
-.our-specialties ul {
-	list-style-type: none;
-	/* Remove default bullet points */
-	padding-left: 0;
-	/* Remove default padding */
+/* List */
+.specialties-list {
+    list-style-type: disc;
+    margin-left: 20px; /* Indents list */
+    font-size: 0.9rem;
 }
 
-.our-specialties li {
-	font-size: 1.1rem;
-	margin-bottom: 15px;
-	display: flex;
-	/* Ensures the icon and text are aligned horizontally */
-	align-items: center;
-	/* Vertically centers the icon and text */
-}
-
-.special-icon {
-	width: 24px;
-	/* Size of the icon */
-	height: 24px;
-	/* Size of the icon */
-	margin-right: 15px;
-	/* Space between icon and text */
-	background: url('your-icon-path.png') no-repeat center center;
-	/* Set your desired icon image */
-	background-size: contain;
-	/* Ensures the icon is resized proportionally */
+.specialties-item {
+    margin-bottom: 5px; /* Space between bullet points */
 }
