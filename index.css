@@ -724,14 +724,16 @@ nav li a.active {
     text-align: center; /* Center the text */
     color: white; /* White text for better visibility */
     margin: 0 auto; /* Center the section */
+    width: 90%; /* Ensures the section doesn’t stretch too wide */
+    max-width: 800px; /* Limit the maximum width */
 }
 
 /* Map container styling */
 #map {
-    width: 100%; /* Full width of the container */
-    height: 400px; /* Fixed height for the map */
-    margin: 20px 0; /* Space between the map and text */
-    border-radius: 8px; /* Optional: rounded corners for the map */
+    width: 200px; /* Smaller width */
+    height: 200px; /* Smaller height */
+    margin: 20px auto; /* Center the map horizontally */
+    border-radius: 8px; /* Optional: rounded corners */
 }
 
 /* Locations text styling */
