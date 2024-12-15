@@ -518,55 +518,59 @@ nav li a.active {
 /* Section container */
 .specialties-section-container {
     display: flex;
-    flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
-    align-items: center;
-    justify-content: center;
-    gap: 20px; /* Space between image and text */
-    padding: 20px;
+    flex-wrap: nowrap; /* Ensures the section remains split into two halves */
+    align-items: stretch; /* Makes both sides the same height */
+    height: auto; /* Adjust based on content */
+    width: 100%; /* Full width of the section */
 }
 
-/* Image wrapper */
+/* Left half - Image */
 .specialties-image-wrapper {
-    flex: 1; /* Makes image take up 50% of the section */
-    max-width: 50%; /* Prevents image from exceeding half the width */
+    flex: 1; /* Takes up 50% of the width */
+    max-width: 50%; /* Ensures image doesn't exceed its half */
+    overflow: hidden; /* Ensures content stays within the container */
 }
 
 .specialties-image {
     width: 100%;
-    height: auto; /* Keeps image proportional */
-    border-radius: 8px; /* Optional: rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+    height: 100%; /* Ensures image covers the container */
+    object-fit: cover; /* Crops/zooms image while preserving aspect ratio */
 }
 
-/* Text wrapper */
+/* Right half - Text */
 .specialties-text-wrapper {
-    flex: 1; /* Makes text take up the other 50% of the section */
-    max-width: 50%;
-    color: #333; /* Neutral text color */
-    padding: 10px;
-    font-family: Arial, sans-serif;
+    flex: 1; /* Takes up 50% of the width */
+    max-width: 50%; /* Ensures text doesn't exceed its half */
+    background-color: #00235a; /* Sets the blue background */
+    color: white; /* Text color for contrast */
+    padding: 20px; /* Padding inside the text area */
+    box-sizing: border-box; /* Ensures padding is included in size calculations */
+    display: flex;
+    flex-direction: column; /* Stacks header, intro, and list vertically */
+    justify-content: center; /* Centers content vertically */
 }
 
 /* Header */
 .specialties-header {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #007bff; /* Optional: matches your theme color */
+    color: #ffffff; /* White text for better visibility */
 }
 
 /* Introductory paragraph */
 .specialties-intro {
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Adds spacing below the intro */
     font-size: 1rem;
 }
 
 /* List */
 .specialties-list {
     list-style-type: disc;
-    margin-left: 20px; /* Indents list */
+    margin-left: 20px; /* Indents the list */
     font-size: 0.9rem;
+    color: #ffffff; /* Ensures list items are visible */
 }
 
 .specialties-item {
-    margin-bottom: 5px; /* Space between bullet points */
+    margin-bottom: 5px; /* Space between list items */
 }
