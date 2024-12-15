@@ -711,3 +711,74 @@ nav li a.active {
     font-size: 1.1rem;
     color: black; /* Change text color to #007BFF */
 }
+
+
+/* service sectionnn */
+/* service sectionnn */
+/* service sectionnn */
+
+/* Section layout for services */
+.services-section {
+    text-align: center; /* Centers the content */
+    padding: 50px 20px;
+    max-width: 1000px; /* Limit the width of the container */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+/* Services list styling */
+.services-list {
+    display: flex;
+    justify-content: space-between; /* Distributes the service items evenly in a row */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px; /* Space between items */
+}
+
+/* Individual service items */
+.service-item {
+    width: 30%; /* Each service item takes up 30% of the space */
+    position: relative; /* Needed for positioning the h4 text */
+    padding-bottom: 20px; /* Adds space between the text and image */
+    max-width: 330px; /* Restricts image width */
+    margin: 0 auto; /* Ensures the items stay centered */
+}
+
+/* Service item image styling */
+.service-item img {
+    width: 100%; /* Ensures the images take up the full width of the container */
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners */
+    transition: opacity 0.3s ease; /* Smooth transition when hovering */
+}
+
+/* Text styling for h4 */
+.service-item h4 {
+    position: absolute; /* Position the text on top of the image */
+    bottom: 20px; /* Place the text towards the bottom of the image */
+    left: 20px; /* Place the text on the left side of the image */
+    color: white; /* White color for text */
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Show text on hover */
+.service-item:hover h4 {
+    opacity: 1; /* Show the text when the image is hovered */
+}
+
+/* Service description text */
+.service-description {
+    font-size: 1rem;
+    color: #333;
+    padding-top: 10px; /* Space between the heading and description */
+    font-weight: normal;
+}
+
+/* Paragraph text below service items */
+.services-section p {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 30px;
+}
