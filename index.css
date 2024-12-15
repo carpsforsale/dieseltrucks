@@ -543,34 +543,42 @@ nav li a.active {
     max-width: 50%; /* Ensures text doesn't exceed its half */
     background-color: #00235a; /* Sets the blue background */
     color: white; /* Text color for contrast */
-    padding: 20px; /* Padding inside the text area */
+    padding: 40px; /* Padding inside the text area */
     box-sizing: border-box; /* Ensures padding is included in size calculations */
     display: flex;
     flex-direction: column; /* Stacks header, intro, and list vertically */
     justify-content: center; /* Centers content vertically */
+    text-align: left; /* Aligns text to the left */
 }
 
 /* Header */
 .specialties-header {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 2rem; /* Increased for better emphasis */
+    margin-bottom: 15px;
     color: #ffffff; /* White text for better visibility */
+    font-family: Poppins, sans-serif;
+    line-height: 1.6; /* Increased line spacing for header */
 }
 
 /* Introductory paragraph */
 .specialties-intro {
-    margin-bottom: 15px; /* Adds spacing below the intro */
-    font-size: 1rem;
+    margin-bottom: 20px; /* Adds spacing below the intro */
+    font-size: 1.2rem; /* Slightly larger font for readability */
+    font-family: Poppins, sans-serif;
+    line-height: 1.8; /* Increased line spacing */
 }
 
 /* List */
 .specialties-list {
+    font-family: Poppins, sans-serif;
     list-style-type: disc;
     margin-left: 20px; /* Indents the list */
-    font-size: 0.9rem;
+    font-size: 1rem; /* Slightly larger font for list items */
     color: #ffffff; /* Ensures list items are visible */
+    line-height: 1.8; /* Increased line spacing for better readability */
+    padding: 0; /* Removes extra padding */
 }
 
 .specialties-item {
-    margin-bottom: 5px; /* Space between list items */
+    margin-bottom: 10px; /* Increased space between list items */
 }
