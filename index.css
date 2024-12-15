@@ -682,6 +682,7 @@ nav li a.active {
 /* Make the header bold */
 .years-experience h2 {
     font-weight: bold;
+    font-size: 3rem;
 }
 
 /* Statistics section with columns */
