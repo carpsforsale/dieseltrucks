@@ -557,6 +557,7 @@ nav li a.active {
     color: #ffffff;
     font-family: Poppins, sans-serif;
     line-height: 1.6;
+    letter-spacing: 0.2rem;
 }
 
 /* Introductory paragraph */
