@@ -721,9 +721,11 @@ nav li a.active {
 .services-section {
     text-align: center; /* Centers the content */
     padding: 50px 20px;
-    max-width: 1000px; /* Limit the width of the container */
     margin: 0 auto; /* Centers the container horizontally */
+    background: linear-gradient(to bottom, #01235A 50%, #1A396A 50%); /* Vertical gradient */
+    color: white; /* Text color to contrast with the dark background */
 }
+
 
 /* Services list styling */
 .services-list {
