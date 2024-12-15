@@ -550,15 +550,23 @@ nav li a.active {
     text-align: left;
 }
 
-/* Header */
+/* Header styling */
 .specialties-header {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* White text for better visibility */
     font-family: Poppins, sans-serif;
-    line-height: 1.6;
-    letter-spacing: 0.2rem;
+    text-align: left; /* Aligns the header text to the left */
 }
+
+/* Divider line under header */
+.specialties-divider {
+    width: 15%; /* Makes the divider half the width of the text container */
+    height: 3px; /* Thickness of the line */
+    background-color: #ffffff; /* White color to match the header */
+    margin: 0px 0 20px 0; /* Adds space above and below, aligns to the left */
+}
+
 
 /* Introductory paragraph */
 .specialties-intro {
