@@ -608,3 +608,36 @@ nav li a.active {
     color: #007bff; /* Solid blue color for icons */
     font-size: 1.2rem; /* Adjust icon size */
 }
+
+/* Truck Logos Section */
+/* Truck Logos Section */
+/* Truck Logos Section */
+
+
+.truck-logos-section {
+    background-color: #00235a; /* Matches the specialties section background */
+    padding: 20px 0; /* Adds vertical padding */
+    display: flex;
+    justify-content: center;
+}
+
+.truck-logos-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space out logos evenly */
+    align-items: center;
+    max-width: 80%; /* Restricts the content width */
+    gap: 20px; /* Space between logos */
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+}
+
+.truck-logo {
+    max-width: 100px; /* Adjust based on logo dimensions */
+    height: auto; /* Maintain aspect ratio */
+    filter: brightness(0) invert(1); /* Optional: makes logos white for dark background */
+    transition: transform 0.3s ease; /* Optional: adds a hover effect */
+}
+
+.truck-logo:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
