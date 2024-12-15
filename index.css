@@ -730,8 +730,8 @@ nav li a.active {
 
 /* Map container styling */
 #map {
-    width: 200px; /* Smaller width */
-    height: 200px; /* Smaller height */
+    width: 300px; /* Adjust the width of the map */
+    height: 300px; /* Adjust the height of the map */
     margin: 20px auto; /* Center the map horizontally */
     border-radius: 8px; /* Optional: rounded corners */
 }
