@@ -717,15 +717,27 @@ nav li a.active {
 /* service sectionnn */
 /* service sectionnn */
 
-/* Map container */
-.google-map {
-    max-width: 100%;
-    height: 450px; /* Adjust height as needed */
-    margin: 20px 0;
+/* Where They Service Section */
+.where-they-service {
+    background: linear-gradient(to right, #01235A, #1A396A); /* Gradient from 01235A to 1A396A */
+    padding: 40px 20px; /* Add padding for spacing */
+    text-align: center; /* Center the text */
+    color: white; /* White text for better visibility */
+    margin: 0 auto; /* Center the section */
 }
 
-iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px; /* Optional: adds rounded corners */
+/* Map container styling */
+#map {
+    width: 100%; /* Full width of the container */
+    height: 400px; /* Fixed height for the map */
+    margin: 20px 0; /* Space between the map and text */
+    border-radius: 8px; /* Optional: rounded corners for the map */
+}
+
+/* Locations text styling */
+.service-locations {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: 400; /* Light weight for readability */
+    color: #e0e0e0; /* Slightly lighter color for the text */
 }
