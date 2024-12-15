@@ -614,30 +614,34 @@ nav li a.active {
 /* Truck Logos Section */
 
 
+/* Truck Logos Section */
 .truck-logos-section {
-    background-color: #00235a; /* Matches the specialties section background */
-    padding: 20px 0; /* Adds vertical padding */
+    background-color: #002c75; /* Matches the specialties section background */
+    padding: 50px 0; /* Adds vertical padding */
     display: flex;
     justify-content: center;
 }
 
+/* Flex container for logos */
 .truck-logos-wrapper {
     display: flex;
     justify-content: space-between; /* Space out logos evenly */
     align-items: center;
-    max-width: 80%; /* Restricts the content width */
-    gap: 20px; /* Space between logos */
+    width: 70%; /* Make the wrapper span the full width */
+    max-width: 90%; /* Ensure logos don't exceed 90% of screen width */
+    gap: 30px; /* Increase space between logos */
     flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
 }
 
+/* Logo styling */
 .truck-logo {
-    max-width: 100px; /* Adjust based on logo dimensions */
+    max-width: 120px; /* Adjust size to ensure they take up the full width */
     height: auto; /* Maintain aspect ratio */
     filter: brightness(0) invert(1); /* Optional: makes logos white for dark background */
     transition: transform 0.3s ease; /* Optional: adds a hover effect */
 }
 
+/* Hover effect on logos */
 .truck-logo:hover {
     transform: scale(1.1); /* Slight zoom on hover */
 }
-
