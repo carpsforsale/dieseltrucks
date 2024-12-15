@@ -542,7 +542,7 @@ nav li a.active {
     max-width: 50%;
     background-color: #00235a;
     color: white;
-    padding: 20px;
+    padding: 60px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
