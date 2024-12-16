@@ -306,7 +306,7 @@ nav li a.active {
 /* stuff they fucking do */
 
 .stuff-we-do-section {
-    background-color: #007BFF; /* Set background color to blue */
+    background: linear-gradient(to right, #00235a, #002c75); /* Gradient from 01235A to 1A396A */
     padding: 60px; /* Add padding to all sides */
 }
 
@@ -323,8 +323,8 @@ nav li a.active {
 }
 
 .stuff-we-do {
-    width: 50px; /* Adjust the size of the icons */
-    height: 50px;
+    width: 75px; /* Adjust the size of the icons */
+    height: 75px;
 }
 
 .stuff-we-do-item p {
