@@ -839,3 +839,99 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #1A396A;
 }
+
+/* footer */
+/* footer */
+/* footer */
+
+footer {
+    background-color: #00235a; /* Dark blue background */
+    color: white; /* White text */
+    padding: 20px 10px; /* Compact padding */
+    font-family: Arial, sans-serif; /* Consistent font */
+}
+
+.footer-container {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Equal spacing between columns */
+    max-width: 1000px; /* Limit the total width */
+    margin: 0 auto; /* Center content */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.footer-column {
+    flex: 1; /* Equal width for each column */
+    margin: 5px; /* Compact spacing between columns */
+    min-width: 150px; /* Prevent columns from shrinking too small */
+}
+
+.footer-column h3 {
+    font-size: 1.4rem; /* Smaller header */
+    font-weight: bold;
+    margin-bottom: 8px; /* Compact spacing below the header */
+    padding-bottom: 3px;
+}
+
+.footer-column p {
+    font-size: 0.9rem; /* Slightly smaller paragraph font size */
+    line-height: 1.4; /* Compact line spacing */
+}
+
+.footer-column .contact-info {
+    padding-left: 0; /* Reset padding from list style */
+}
+
+.footer-column .contact-info p {
+    font-size: 0.9rem; /* Font size for contact info */
+    line-height: 1.4;
+    margin-bottom: 6px; /* Space between paragraphs */
+    display: flex; /* Flexbox layout for icons and text */
+    align-items: center; /* Vertical centering */
+}
+
+.footer-column .contact-info i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #e0e0e0; /* Light gray for icons */
+}
+
+.footer-column .contact-info a {
+    color: #e0e0e0; /* Light gray color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-column .contact-info a:hover {
+    color: #ffffff; /* Bright white on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-column ul {
+    list-style: disc; /* Add bullet points back */
+    padding-left: 20px; /* Add left padding for bullets */
+    margin: 0; /* Remove unnecessary margin */
+}
+
+.footer-column ul li {
+    font-size: 0.9rem; /* Slightly smaller text size */
+    margin-bottom: 6px; /* Space between list items */
+}
+
+.footer-column ul li a {
+    color: #e0e0e0; /* Light gray color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff; /* White on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack columns vertically */
+        text-align: center; /* Center-align text for smaller screens */
+    }
+
+    .footer-column {
+        margin-bottom: 15px; /* Reduced space between stacked columns */
+    }
+}
