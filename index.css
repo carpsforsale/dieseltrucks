@@ -719,13 +719,12 @@ nav li a.active {
 
 /* Where They Service Section */
 .where-they-service {
-    background: linear-gradient(to right, #01235A, #1A396A); /* Gradient from 01235A to 1A396A */
-    padding: 40px 20px; /* Add padding for spacing */
+    background: linear-gradient(to right, #00235a, #002c75); /* Gradient from 01235A to 1A396A */
+    padding: 40px 300px; /* Add padding for spacing */
     text-align: center; /* Center the text */
     color: white; /* White text for better visibility */
-    margin: 0 auto; /* Center the section */
-    width: 90%; /* Ensures the section doesn’t stretch too wide */
-    max-width: 800px; /* Limit the maximum width */
+    width: 100%; /* Make the section full width */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 /* Service content layout */
@@ -733,14 +732,24 @@ nav li a.active {
     display: flex; /* Use flexbox to arrange text and map side by side */
     justify-content: space-between; /* Space out the items */
     align-items: center; /* Vertically center align the content */
+    max-width: 1200px; /* Optional: set a max-width for large screens */
+    margin: 0 auto; /* Center the content horizontally */
 }
 
 /* Text styling */
 .service-text {
     flex: 1; /* Allow the text to take up the remaining space */
-    padding-right: 20px; /* Add some space between text and map */
+    max-width: 50%; /* Limit the width of the text area */
+    padding-right: 10px; /* Reduced space between text and map */
+    text-align: left; /* Align text to the left */
+}
+.service-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left; /* Align text to the left */
 }
 
+/* Locations text styling */
 .service-locations {
     font-size: 1.2rem;
     margin-top: 20px;
@@ -750,7 +759,7 @@ nav li a.active {
 
 /* Map container styling */
 #map {
-    width: 300px; /* Set a smaller size for the map */
-    height: 300px; /* Set a fixed height for the map */
+    width: 300px; /* Width of the map */
+    height: 300px; /* Height of the map */
     border-radius: 8px; /* Optional: rounded corners */
 }
