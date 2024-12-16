@@ -763,3 +763,79 @@ nav li a.active {
     height: 300px; /* Height of the map */
     border-radius: 8px; /* Optional: rounded corners */
 }
+
+/* contact contact sectionnn */
+/* contact contact sectionnn */
+/* contact contact sectionnn */
+
+/* Book Appointment Section */
+.book-appointment {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.book-appointment h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #01235A;
+}
+
+/* Form Layout */
+.form-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-gap: 20px; /* Space between fields */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    padding: 10px 20px; /* Add extra padding for a balanced look */
+    font-size: 1rem; /* Keep the font size readable */
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+    max-width: 300px; /* Limit the button's width */
+    margin: 0 auto; /* Center the button within its container */
+}
+
+
+/* Full-width elements */
+.full-width {
+    grid-column: span 2; /* Span across both columns */
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1A396A;
+}
