@@ -306,7 +306,7 @@ nav li a.active {
 /* stuff they fucking do */
 
 .stuff-we-do-section {
-    background: linear-gradient(to right, #00235a, #002c75); /* Gradient from 01235A to 1A396A */
+    background: linear-gradient(to right, #1e3a8a, #2563eb, #3b82f6);
     padding: 60px; /* Add padding to all sides */
 }
 
