@@ -86,78 +86,61 @@ body {
 /* Header SECTION */
 
 header {
-	width: 1080px;
-	/* Set the header width to 1080px */
-	height: 76px;
-	/* Set the header height to 76px */
-	display: flex;
-	/* Use flexbox to create two columns */
-	justify-content: space-between;
-	/* Space between the columns */
-	align-items: center;
-	/* Vertically center the content */
-	margin: 0 auto;
-	/* Center the header horizontally with auto margins */
+    padding: 0px 200px;
+    height: 76px; /* Set the header height to 76px */
+    display: flex; /* Use flexbox to create two columns */
+    justify-content: space-between; /* Space between the columns */
+    align-items: center; /* Vertically center the content */
+    margin: 0 auto; /* Center the header horizontally with auto margins */
+    position: sticky; /* Makes the header sticky */
+    top: 0; /* Keeps it at the top of the viewport */
+    z-index: 1000; /* Ensures the header stays above other content */
+    background-color: #fff; /* Optional: background color to ensure visibility */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for better visibility */
 }
 
 .logo {
-	width: 730px;
-	/* Set the logo container width to 730px */
-	height: 76px;
-	/* Set the height to 76px */
-	display: flex;
-	justify-content: left;
-	/* Center the logo horizontally */
-	align-items: center;
-	/* Center the logo vertically */
+    width: 730px; /* Set the logo container width to 730px */
+    height: 76px; /* Set the height to 76px */
+    display: flex;
+    justify-content: left; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
 }
 
 .logo img {
-	height: 50px;
-	/* Set the logo image height to 50px */
+    height: 50px; /* Set the logo image height to 50px */
 }
 
 nav {
-	width: 350px;
-	/* Set the navigation container width to 350px */
-	height: 76px;
-	/* Set the height to 76px */
-	display: flex;
-	justify-content: center;
-	/* Center the nav items horizontally */
-	align-items: center;
-	/* Vertically center the nav items */
+    width: 350px; /* Set the navigation container width to 350px */
+    height: 76px; /* Set the height to 76px */
+    display: flex;
+    justify-content: center; /* Center the nav items horizontally */
+    align-items: center; /* Vertically center the nav items */
 }
 
 nav ul {
-	list-style: none;
-	/* Remove list styling */
-	display: flex;
-	/* Arrange the list items in a row */
-	gap: 20px;
-	/* Add space between the list items */
+    list-style: none; /* Remove list styling */
+    display: flex; /* Arrange the list items in a row */
+    gap: 20px; /* Add space between the list items */
 }
 
 nav li a {
-	color: #001e3c;
-	/* Default link color: dark dark blue */
-	font-size: 1rem;
-	font-weight: bold;
-	text-decoration: none;
-	/* Remove underline */
-	transition: color 0.3s ease, text-shadow 0.3s ease;
-	/* Smooth transition */
+    color: #001e3c; /* Default link color: dark dark blue */
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
 }
 
 nav li a:hover {
-	color: #007BFF;
-	/* Brighter blue for hover state */
+    color: #007BFF; /* Brighter blue for hover state */
 }
 
 nav li a.active {
-	color: #0042ad;
-	/* Bright blue for the active page */
+    color: #0042ad; /* Bright blue for the active page */
 }
+
 
 /* Slider SECTION BRO */
 /* Slider SECTION BRO */
