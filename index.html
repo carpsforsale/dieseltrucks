@@ -291,38 +291,53 @@
 
 
     <!-- Book an Appointment Section -->
+    <!-- Book an Appointment Section -->
     <section class="book-appointment">
         <h2>Book an Appointment</h2>
-        <form action="submit_appointment.php" method="post">
+        <form action="submit_appointment.php" method="post" class="form-layout">
+            <!-- Row 1 -->
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
             </div>
-
             <div class="form-group">
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" required>
             </div>
-
+    
+            <!-- Row 2 -->
             <div class="form-group">
                 <label for="phone">Phone</label>
                 <input type="tel" id="phone" name="phone" required>
             </div>
-
             <div class="form-group">
                 <label for="brand">Brand</label>
-                <input type="text" id="brand" name="brand" required>
+                <select id="brand" name="brand" required>
+                    <option value="" disabled selected>Select a Brand</option>
+                    <option value="International">International</option>
+                    <option value="Freightliner">Freightliner</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="PACCAR">PACCAR</option>
+                    <option value="Mack">Mack</option>
+                    <option value="Peterbilt">Peterbilt</option>
+                    <option value="Kenworth">Kenworth</option>
+                    <option value="Western Star">Western Star</option>
+                    <option value="Other">Other</option>
+                </select>
             </div>
-
-            <div class="form-group">
+    
+            <!-- Row 3 -->
+            <div class="form-group full-width">
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
             </div>
-
-            <button type="submit">Submit</button>
+    
+            <!-- Submit Button -->
+            <div class="form-group full-width">
+                <button type="submit">Submit</button>
+            </div>
         </form>
     </section>
-
 
     <footer>
         <div class="footer-container">
