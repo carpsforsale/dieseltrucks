@@ -301,6 +301,42 @@ nav li a.active {
 	/* Position the right caret */
 }
 
+/* stuff they fucking do */
+/* stuff they fucking do */
+/* stuff they fucking do */
+
+.stuff-we-do-section {
+    background-color: #007BFF; /* Set background color to blue */
+    padding: 60px; /* Add padding to all sides */
+}
+
+.stuff-we-do-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ensure the items are evenly spaced */
+    color: #007BFF; /* Set text color to blue (if needed, otherwise can be removed) */
+}
+
+.stuff-we-do-item {
+    text-align: center; /* Center the text under the icon */
+    margin: 10px;
+}
+
+.stuff-we-do {
+    width: 50px; /* Adjust the size of the icons */
+    height: 50px;
+}
+
+.stuff-we-do-item p {
+    margin-top: 8px; /* Add space between the icon and text */
+    font-size: 1rem; /* Font size for the text */
+    color: #ffffff; /* Set a color for the text */
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
 /* Why Choose Us SECTION */
 /* Why Choose Us SECTION */
 /* Why Choose Us SECTION */
